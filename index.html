@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FUENTES DE GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">    
     <!--ARCHIVOS CSS PERSONALIZADOS-->
     <link rel="stylesheet" type="text/css" href="css/estilo.css ">
     <title>Paula Cedones</title>
@@ -13,11 +15,107 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
+
+    <!--MENU NAVEGACION-->
+    <nav class="navbar navbar-dark bg-primary navbar-expand-md ">
+        <div class="container">
+            
+            <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#menu-principal" aria-controls="#menu-principal" aria-expanded="false"
+            aria-label="Desplegar menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item active"><a href="#"class="nav-link">PRODUCTOS</a></li>
+                    <li class="nav-item"><a href="#"class="nav-link">Reyes Magos</a></li>
+                    <li class="nav-item"><a href="#"class="nav-link">Ofertas Camping</a></li>
+                    <li class="nav-item"><a href="#"class="nav-link">Lanzamiento</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--PRODUCTO-->
+    <section class="producto mt-5">
+        <div class="container">
+            <div class="row text-center text-sm-left">
+                <!--IMG PRODUCTO-->
+                <div class="col-12 col-sm-5 pb-5">
+                    <img src="img/prod-1.jpg" class="img-fluid border " alt="producto">
+                    
+                </div>
+                <!--TITULO-->
+                <div class="col-12 col-sm-7">
+                    <h1>AIRE ACONDICIONADO SPLIT BGH INVERTER BSIH45CP </h1>
+                    <h6 class="text-primary "> Precio en 1 pago</h6>
+                    <!--PRECIOS-->
+                    <div class="row ">
+                        <div class="col col-sm-6 d-sm-flex align-items-end ">
+                            <h2 class="text-primary font-weight-bold pr-3 ">$27.499</h2>
+                            <h5 class="pr-3 text-secondary"><strike>$31.890</strike></h5>
+                            <h5 class="text-success ">30% OFF</h5>
+                        </div>
+                    </div>
+                    <!--FORMAS DE PAGO-->
+                    <div class="row ">
+                        <div class="col-12 col-sm-4 d-flex align-items-end justify-content-center">
+                            <ion-icon size="large"name="card-outline"></ion-icon>
+                            <h6 class="ml-2"><strong>12 </strong>cuotas x <strong>$2.291</strong></h6>
+                        </div>  
+                        <div class="col-12 col-sm-8 d-flex align-items-end justify-content-center justify-content-sm-left ">  
+                            <a href="#">Ver cuotas y medios de pago</a>
+                        </div>
+                    </div>
+                    <!--COMPRAR-->
+                    <div class="comprar row mt-4" >
+                        <div class="col-12 col-sm-5 ">
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                        <div class="col-12 col-sm-7 text-secondary d-sm-flex align-items-center justify-content-sm-start ">
+                            <ion-icon class="mr-3" size="large" name="heart-outline"></ion-icon>
+                            <ion-icon size="large"name="mail-open"></ion-icon>
+                        </div>
+                    </div>
+                    <hr class="style1 mt-5">
+                    <!--ENVIOS-->
+                    <div class="envios row">
+                        <!--envio gratis-->
+                        <div class="col-12 col-sm-3">
+                            <h5><span class="badge badge-warning p-2">Envío GRATIS</span></h5>
+                        </div>
+                        <div class="col-12 col-sm-9">
+                            <a href="#">Ver zonas disponibles</a>
+                        </div>                    
+                    </div>
+                        <!--tipos de envios-->
+                    <div class="row mt-4">
+                        <div class="col-12 col-sm-6">
+                            <p>Retiro GRATIS por Sucursal</p>
+                            <a href="#">Ver sucursales</a>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <p>Envío a todo el país</p>
+                            <a href="#">Calcular costo de envío</a>
+                        </div>
+                    </div>
+                    
+                   
+                    
+                    <!--FORMAS DE ENVIOS-->
+
+                </div>
+            </div>
+        </div>
+    </section>
     
     
     
     
     
     <script type="text/javascript" src="js/app.js"></script>
+    <!--ICONOS-->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>

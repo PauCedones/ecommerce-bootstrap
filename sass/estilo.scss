@@ -1,1 +1,16 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
+@import 'variables';
+
+/*-------------------
+ESTILOS DEL DISEÑO
+-------------------*/
+
+html{
+    font-size: 13px;
+}
+
+body{
+    color: $texto;
+    font-family: 'Open Sans', sans-serif;
+
+}
