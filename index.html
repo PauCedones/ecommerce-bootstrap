@@ -16,16 +16,32 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
     <!--LOGO USUARIOS-->
-    <div class="container">
-        <div class="row bg-info">
-            <div class="col m-4 ">
-                <img src="img/logo.png" alt="logo">
+    <header class="container-fluid  bg-info ">
+        <div class="row d-flex align-items-center ">
+            <div class="col-1 m-4 mr-lg-5 ">
+                <img src="img/logo.png"  alt="logo">
             </div>
-            <div class="col">
-                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            <div class="d-none d-lg-flex col-lg-6 d-flex flex-row  ">
+                <span class=" col-12 badge-pill badge-light d-flex align-items-center p-2 shadow ">
+                    <input class=" buscador form-control  " type="text" placeholder="Buscar" aria-label="Search">
+                    <ion-icon name="search-outline" style="font-size:23px"></ion-icon>
+                </span>
+
+            </div>
+            <!---->
+            <div class="col-3 d-flex align-items-center">
+                <a href=""><ion-icon size="large" name="heart-outline" class="mr-5"></ion-icon></a>
+              
+                <ion-icon size="large" name="person-outline"></ion-icon>
+                <a href="">
+                    <span>Mi Cuenta  </span>
+                    <ion-icon name="chevron-down-outline" class="ml-2"></ion-icon>
+                </a>
+                
+                <ion-icon size="large" name="cart-outline"></ion-icon>
             </div>
         </div>
-    </div>
+    </header>
 
     <!--MENU NAVEGACION-->
     <nav class="navbar navbar-dark bg-primary navbar-expand-md ">
@@ -75,8 +91,8 @@
                             <ion-icon size="large"name="card-outline"></ion-icon>
                             <h6 class="ml-2"><strong>12 </strong>cuotas x <strong>$2.291</strong></h6>
                         </div>  
-                        <div class="col-12 col-sm-8 d-flex align-items-end justify-content-center justify-content-sm-left ">  
-                            <a href="#">Ver cuotas y medios de pago</a>
+                        <div class="col-12 col-sm-8 d-flex align-items-end justify-content-center justify-content-sm-left text-left ">  
+                           <a href="#" >Ver cuotas y medios de pago</a>
                         </div>
                     </div>
                     <!--COMPRAR-->
@@ -85,8 +101,8 @@
                             <a href="#" class="btn btn-primary">Comprar</a>
                         </div>
                         <div class="col-12 col-sm-7 text-secondary d-sm-flex align-items-center justify-content-sm-start ml-sm-4 ml-lg-0 mt-3">
-                            <ion-icon class="mr-3" size="large" name="heart-outline"></ion-icon>
-                            <ion-icon size="large"name="mail-open"></ion-icon>
+                            <a href=""><ion-icon class="mr-3" size="large" name="heart-outline"></ion-icon></a>
+                            <a href=""><ion-icon size="large"name="mail-open"></ion-icon></a>
                         </div>
                     </div>
                     <hr class="style1 mt-5">
@@ -104,24 +120,24 @@
                         
                         <!--retiro en sucursal-->   
                     <div class="container ">
-                        <div class="row mt-4 d-flex justify-content-center justify-content-sm-start">
+                        <div class="row mt-4 d-flex justify-content-center justify-content-sm-start mb-3">
                             <div class="col-2">
                                 <img src="img/store.png" alt="store">
                             </div>
 
-                            <div class="col-6">
-                                
-                                <p class="font-weight-bold text-left">Retiro GRATIS por Sucursal</p>
+                            <div class="col-6 d-flex flex-column">
+                                <span class="font-weight-bold text-left">Retiro GRATIS por Sucursal</span>
                                 <a href="#" class="text-left" >Ver sucursales</a>
                             </div>
                         </div>
                             <!--envio a todo el pais-->
                         <div class="row d-flex justify-content-center justify-content-sm-start">
-                            <div class="col-2">
+                            <div class="col-2 ">
                                 <img src="img/send.png" alt="store">
                             </div>
-                            <div class="col-6">
-                                <p class="font-weight-bold text-left">Envío a todo el país</p>
+
+                            <div class="col-6 d-flex flex-column">
+                                <span class="font-weight-bold text-left">Envío a todo el país</span>
                                 <a href="#" class="text-left">Calcular costo de envío</a>
                             </div>
                         </div>  
@@ -346,27 +362,35 @@
     </div>
     <!--/.Carousel Wrapper-->
 
+
     <!--PIE DE PAGINA-->
-    <footer class=" bg-info">
+    <footer class="pie-de-pagina bg-info">
         <div class="container p-5">
             <div class="row d-flex justify-content-between">
-                <div class="col-12 col-lg2 text-primary"><ion-icon size="large"name="call-outline"></ion-icon></div>
-                <div class="col-12 col-lg-2 text-primary">
-                    <p>Atención Télefonica</p>
-                    <h4 class="font-weight-bold">0810-333-9471</h4>
-                    <h4 class="font-weight-bold">(0236) 4421081</h4>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <ion-icon size="large"name="call-outline"class="text-primary"></ion-icon>
+                    </div>                
+                    <div class="col-12 col-lg-10 text-primary">
+                        <span class="h3">Atención Télefonica</span>
+                        <h4 class="font-weight-bold">0810-333-9471</h4>
+                        <h4 class="font-weight-bold">(0236) 4421081</h4>
+                    </div>
                 </div>
+                
+
                 <div class="col-12 col-lg-2">
                     <h4>CENTRO DE AYUDA</h4>
-                    <p>Medios de Pago y Envío</p>
-                    <p>Preguntas Frecuentes</p>
-                    <p>Politica de Cambios</p>
+                    <a href="#">Medios de Pago y Envío</a>
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Politica de Cambios</a>
+                    
                 </div>
                 <div class="col-12 col-lg-2">
                     <h4>INSTITUCIONAL</h4>
-                    <p>La Empresa</p>
-                    <p>Sucursales</p>
-                    <p>Contacto</p>
+                    <a href="#">La Empresa</a>
+                    <a href="#">Sucursales</a>
+                    <a href="#">Contacto</a>
                 </div>
                 <div class="col-12 col-lg-2">
                     <h4>SUSCRIBITE</h4>

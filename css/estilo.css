@@ -9895,6 +9895,21 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.form-control {
+  border: none;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+  margin: 5px 20px 5px 0px !important;
+}
+nav .navbar-nav .nav-item .nav-link:focus li {
+  background: #86120a;
+}
+nav .navbar-nav .nav-item .nav-link:hover {
+  background: #9e150b;
+  margin: 5px 20px 5px 0px !important;
+}
+
 .envio p {
   margin-bottom: 0 !important;
 }

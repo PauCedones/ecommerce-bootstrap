@@ -14,6 +14,41 @@ body{
     font-family: 'Open Sans', sans-serif;
 
 }
+
+//HEADER
+.form-control{
+    border: none;
+}
+
+//NAV BAR
+nav{
+    
+    .navbar-nav {
+        
+        .nav-item{
+            .nav-link{
+                margin:5px 20px 5px 0px !important;
+                &:focus li{
+                    background: darken($primary,10%);
+                    
+                }
+                &:hover{
+                    background: darken($primary,5%);
+                    margin:5px 20px 5px 0px !important;
+                            
+                }
+            }
+            
+        }
+    }    
+                
+}
+  
+
+
+
+/////////
+
 .envio{
     p{
         margin-bottom: 0 !important;
