@@ -15,6 +15,17 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
+    <!--LOGO USUARIOS-->
+    <div class="container">
+        <div class="row bg-info">
+            <div class="col m-4 ">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="col">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </div>
+        </div>
+    </div>
 
     <!--MENU NAVEGACION-->
     <nav class="navbar navbar-dark bg-primary navbar-expand-md ">
@@ -90,16 +101,34 @@
                         </div>                    
                     </div>
                         <!--tipos de envios-->
-                    <div class="row mt-4">
-                        <div class="col-12 col-sm-6 ">
-                            <p class="font-weight-bold">Retiro GRATIS por Sucursal</p>
-                            <a href="#">Ver sucursales</a>
+                        
+                        <!--retiro en sucursal-->   
+                    <div class="container ">
+                        <div class="row mt-4 d-flex justify-content-center justify-content-sm-start">
+                            <div class="col-2">
+                                <img src="img/store.png" alt="store">
+                            </div>
+
+                            <div class="col-6">
+                                
+                                <p class="font-weight-bold text-left">Retiro GRATIS por Sucursal</p>
+                                <a href="#" class="text-left" >Ver sucursales</a>
+                            </div>
                         </div>
-                        <div class="col-12 col-sm-6">
-                            <p class="font-weight-bold">Envío a todo el país</p>
-                            <a href="#">Calcular costo de envío</a>
-                        </div>
-                    </div>                 
+                            <!--envio a todo el pais-->
+                        <div class="row d-flex justify-content-center justify-content-sm-start">
+                            <div class="col-2">
+                                <img src="img/send.png" alt="store">
+                            </div>
+                            <div class="col-6">
+                                <p class="font-weight-bold text-left">Envío a todo el país</p>
+                                <a href="#" class="text-left">Calcular costo de envío</a>
+                            </div>
+                        </div>  
+                        
+                    </div>
+                    
+                                       
 
                 </div>
             </div>
@@ -316,6 +345,55 @@
     
     </div>
     <!--/.Carousel Wrapper-->
+
+    <!--PIE DE PAGINA-->
+    <footer class=" bg-info">
+        <div class="container p-5">
+            <div class="row d-flex justify-content-between">
+                <div class="col-12 col-lg2 text-primary"><ion-icon size="large"name="call-outline"></ion-icon></div>
+                <div class="col-12 col-lg-2 text-primary">
+                    <p>Atención Télefonica</p>
+                    <h4 class="font-weight-bold">0810-333-9471</h4>
+                    <h4 class="font-weight-bold">(0236) 4421081</h4>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <h4>CENTRO DE AYUDA</h4>
+                    <p>Medios de Pago y Envío</p>
+                    <p>Preguntas Frecuentes</p>
+                    <p>Politica de Cambios</p>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <h4>INSTITUCIONAL</h4>
+                    <p>La Empresa</p>
+                    <p>Sucursales</p>
+                    <p>Contacto</p>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <h4>SUSCRIBITE</h4>
+                    <p>Recibi en tu email nuestras ofertas e ingresos</p>
+                    
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary">Enviar</button>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <hr class="style1 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-6 d-flex justify-content-between">
+                    <p>CLIENTE 2020 - Todos los derechos reservados</p>
+                </div>
+    
+                <div class="col-6 d-flex justify-content-between">
+                    <img src="img/datafiscal.jpg" alt="data fiscal">
+                </div>
+            </div>
+        </div>
+        
+    </footer>
     
     
     <script type="text/javascript" src="js/app.js"></script>
