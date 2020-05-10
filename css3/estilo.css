@@ -9906,16 +9906,11 @@ body {
 .descripcion-ficha button:active {
   color: #b6180d !important;
   box-shadow: none !important;
-  border-bottom: 3px solid #b6180d;
+  border: none !important;
 }
 .descripcion-ficha button:focus {
   box-shadow: none !important;
-  outline: none !important;
-  border-bottom: 3px solid #b6180d;
-}
-.descripcion-ficha button:hover {
-  border-bottom: 3px solid #b6180d;
-  transition: all ease-out 0.3s;
+  border: none !important;
 }
 
 /*# sourceMappingURL=estilo.css.map */
