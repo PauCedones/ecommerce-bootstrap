@@ -84,7 +84,7 @@
             <div class="row text-center text-sm-left">
                 <!--IMG PRODUCTO-->
                 <div class="col-12 col-sm-5 pb-5">
-                    <img src="img/prod-1.jpg" class="img-fluid border " alt="producto">
+                    <img src="img/prod-1.jpg" id="zoom-img"class="img-fluid border " data-tittle="producto" data-help="Haciendo zoom a la imagen con el mouse"alt="producto">
                     
                 </div>
                 <!--TITULO-->
@@ -105,7 +105,7 @@
                             <ion-icon size="large"name="card-outline"></ion-icon>
                             <h6 class="ml-2"><strong>12 </strong>cuotas x <strong>$2.291</strong></h6>
                         </div>  
-                        
+
                         <div class="col-12 col-sm-8 d-flex align-items-end justify-content-center justify-content-sm-left text-left ">  
                            <button id="btnFetch"class="spinner-button" >Ver cuotas y medios de pago</button>          
                         </div>
@@ -125,7 +125,7 @@
 
 
                     <div class="modal "id="ventana-modal" tabindex='-1' role="dialog" aria-labelledby="titulo-ventana"aria-hidden="true">
-                        <div class="modal-dialog "role="document">
+                        <div class="modal-dialog"role="document">
                             <div class="modal-content">
                                 <div class="modal-header ">
                                     <button class="close" data-dismiss="modal" aria-label="cerrar">
@@ -142,11 +142,6 @@
                         </div>
                     </div>
                     
-                    
-
-
-
-
                     <hr class="style1 mt-5">
                     <!--ENVIOS-->
                     <div class="envios row mt-4">
@@ -154,6 +149,7 @@
                         <div class="col-12 col-sm-3">
                             <h5><span class="badge badge-warning p-2">Envío GRATIS</span></h5>
                         </div>
+                
                         <div class="col-12 col-sm-9 ">
                             <a class="ml-sm-4 ml-lg-0"href="#">Ver zonas disponibles</a>
                         </div>                    
@@ -226,249 +222,138 @@
     </section>
     
     <!--MAS EN ESTA CATEGORIA-->
+    <section class="productos py-4">
+        <div class="container">
+            <h1 class=" h3 font-weight-bold text-center pb-4">Más en esta categoria</h1>
+            <div class="row text-md-center">
 
-    <!--Carousel Wrapper-->
-    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+                <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card">
+                        <img src="img/prod-1.jpg" class="card-img-top h-100 border" alt="proyecto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">SMART TV 43" HISENSE FHD + PANEL TV ZANZINI CLEAN</h5>
+                            <div class="col d-flex">
+                                <p class="card-text text-primary font-weight-bold h5 pr-2">$27.499</p>
+                                <p class="card-text pr-2"><strike>$31.890</strike></p>
+                                <p class="card-text text-success pr-2">30% OFF</p>
+                            </div>
+                        </div>
+                    </div>  
+                </article>
 
-        <!--Controls-->
-        <div class="controls-top">
-        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><ion-icon size="large"name="arrow-back-outline"></ion-icon></ion-icon></a>
-        <a class="btn-floating" href="#multi-item-example" data-slide="next"><ion-icon size="large" name="arrow-forward-outline"></ion-icon></a>
+                <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card">
+                        <img src="img/prod-2.jpg" class="card-img-top h-100 border" >
+                        <div class="card-body">
+                            <h5 class="card-title">SMART TV 43" HISENSE FHD + PANEL TV ZANZINI CLEAN</h5>
+                            <div class="col d-flex">
+                                <p class="card-text text-primary font-weight-bold h5 pr-2">$27.499</p>
+                                <p class="card-text pr-2"><strike>$31.890</strike></p>
+                                <p class="card-text text-success pr-2">30% OFF</p>
+                            </div>
+                        </div>
+                    </div>  
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card">
+                        <img src="img/prod-1.jpg" class="card-img-top h-100 border" >
+                        <div class="card-body">
+                            <h5 class="card-title">SMART TV 43" HISENSE FHD + PANEL TV ZANZINI CLEAN</h5>
+                            <div class="col d-flex">
+                                <p class="card-text text-primary font-weight-bold h5 pr-2">$27.499</p>
+                                <p class="card-text pr-2"><strike>$31.890</strike></p>
+                                <p class="card-text text-success pr-2">30% OFF</p>
+                            </div>
+                        </div>
+                    </div>  
+                </article>
+
+                <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card">
+                        <img src="img/prod-1.jpg" class="card-img-top h-100 border">
+                        <div class="card-body">
+                            <h5 class="card-title">SMART TV 43" HISENSE FHD + PANEL TV ZANZINI CLEAN</h5>
+                            <div class="col d-flex">
+                                <p class="card-text text-primary font-weight-bold h5 pr-2">$27.499</p>
+                                <p class="card-text pr-2"><strike>$31.890</strike></p>
+                                <p class="card-text text-success pr-2">30% OFF</p>
+                            </div>
+                        </div>
+                    </div>  
+                </article>
+
+            </div>
         </div>
-        <!--/.Controls-->
+    </section>
+
     
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-        <li data-target="#multi-item-example" data-slide-to="1"></li>
-        
-        </ol>
-        <!--/.Indicators-->
-    
-        <!--Slides-->
-        <div class="carousel-inner" role="listbox">
-    
-        <!--First slide-->
-        <div class="carousel-item active">
-    
-            <div class=" col-12 col-md-3" style="float:left">
-                <div class="card mb-2">
-                    <img class="card-img-top"
-                    src="img/prod-1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                    <h4 class="card-title h6 ">SMART TV 43" HISENSE FHD + PANEL TV ZANZINI CLEAN</h4>
-                    <div class="row">
-                        <div class="col  d-flex flex-row">
-                            <p class="card-text text-primary font-weight-bold h5 pr-2">$27.499</p>
-                            <p class="card-text pr-2"><strike>$31.890</strike></p>
-                            <p class="card-text text-success pr-2">30% OFF</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class=" col-12 col-md-3" style="float:left">
-                <div class="card mb-2">
-                    <img class="card-img-top"
-                    src="img/prod-1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                    <h4 class="card-title h6 ">SMART TV 43" HISENSE FHD + PANEL TV ZANZINI CLEAN</h4>
-                    <div class="row">
-                        <div class="col  d-flex flex-row">
-                            <p class="card-text text-primary font-weight-bold h5 pr-2">$27.499</p>
-                            <p class="card-text pr-2"><strike>$31.890</strike></p>
-                            <p class="card-text text-success pr-2">30% OFF</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class=" col-12 col-md-3" style="float:left">
-                <div class="card mb-2">
-                    <img class="card-img-top"
-                    src="img/prod-1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                    <h4 class="card-title h6 ">SMART TV 43" HISENSE FHD + PANEL TV ZANZINI CLEAN</h4>
-                    <div class="row">
-                        <div class="col  d-flex flex-row">
-                            <p class="card-text text-primary font-weight-bold h5 pr-2">$27.499</p>
-                            <p class="card-text pr-2"><strike>$31.890</strike></p>
-                            <p class="card-text text-success pr-2">30% OFF</p>
-                        </div>
-                    </div>
+
+   
+   <!--PIE DE PAGINA-->
+   <footer class="pie-de-pagina bg-info ">
+    <div class="container p-5 ">
+        <div class="row justify-content-lg-between">
+
+            <div class="col-lg-3">
+                <div class="row d-flex flex-row">
+                    <div class="col-2 col-sm-2">
+                        <ion-icon size="large"name="call-outline"class="text-primary"></ion-icon>
+                    </div>                
+                    <div class="col-11 col-sm-10 text-primary">
+                        <span class="h5">Atención Télefonica</span>
+                        <h4 class="font-weight-bold">0810-333-9471</h4>
+                        <h4 class="font-weight-bold">(0236) 4421081</h4>
                     </div>
                 </div>
             </div>
             
-            <div class=" col-12 col-md-3" style="float:left">
-                <div class="card mb-2">
-                    <img class="card-img-top"
-                    src="img/prod-1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                    <h4 class="card-title h6 ">SMART TV 43" HISENSE FHD + PANEL TV ZANZINI CLEAN</h4>
-                    <div class="row">
-                        <div class="col  d-flex flex-row">
-                            <p class="card-text text-primary font-weight-bold h5 pr-2">$27.499</p>
-                            <p class="card-text pr-2"><strike>$31.890</strike></p>
-                            <p class="card-text text-success pr-2">30% OFF</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-    
-        </div>
-        <!--/.First slide-->
-    
-        <!--Second slide-->
-        <div class="carousel-item">
-    
-            <div class=" col-12 col-md-3" style="float:left">
-                <div class="card mb-2">
-                    <img class="card-img-top"
-                    src="img/prod-1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                    <h4 class="card-title h6 ">SMART TV 43" HISENSE FHD + PANEL TV ZANZINI CLEAN</h4>
-                    <div class="row">
-                        <div class="col  d-flex flex-row">
-                            <p class="card-text text-primary font-weight-bold h5 pr-2">$27.499</p>
-                            <p class="card-text pr-2"><strike>$31.890</strike></p>
-                            <p class="card-text text-success pr-2">30% OFF</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class=" col-12 col-md-3" style="float:left">
-                <div class="card mb-2">
-                    <img class="card-img-top"
-                    src="img/prod-1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                    <h4 class="card-title h6 ">SMART TV 43" HISENSE FHD + PANEL TV ZANZINI CLEAN</h4>
-                    <div class="row">
-                        <div class="col  d-flex flex-row">
-                            <p class="card-text text-primary font-weight-bold h5 pr-2">$27.499</p>
-                            <p class="card-text pr-2"><strike>$31.890</strike></p>
-                            <p class="card-text text-success pr-2">30% OFF</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div class=" col-12 col-md-3" style="float:left">
-                <div class="card mb-2">
-                    <img class="card-img-top"
-                    src="img/prod-1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                    <h4 class="card-title h6 ">SMART TV 43" HISENSE FHD + PANEL TV ZANZINI CLEAN</h4>
-                    <div class="row">
-                        <div class="col  d-flex flex-row">
-                            <p class="card-text text-primary font-weight-bold h5 pr-2">$27.499</p>
-                            <p class="card-text pr-2"><strike>$31.890</strike></p>
-                            <p class="card-text text-success pr-2">30% OFF</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class=" col-12 col-md-3" style="float:left">
-                <div class="card mb-2">
-                    <img class="card-img-top"
-                    src="img/prod-1.jpg" alt="Card image cap">
-                    <div class="card-body">
-                    <h4 class="card-title h6 ">SMART TV 43" HISENSE FHD + PANEL TV ZANZINI CLEAN</h4>
-                    <div class="row">
-                        <div class="col  d-flex flex-row">
-                            <p class="card-text text-primary font-weight-bold h5 pr-2">$27.499</p>
-                            <p class="card-text pr-2"><strike>$31.890</strike></p>
-                            <p class="card-text text-success pr-2">30% OFF</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-    
-        </div>
-        <!--/.Second slide-->
-    
-        
-    
-        </div>
-        <!--/.Slides-->
-    
-    </div>
-    <!--/.Carousel Wrapper-->
-
-
-    <!--PIE DE PAGINA-->
-    <footer class="pie-de-pagina bg-info">
-        <div class="container p-5 ">
-            <div class="row justify-content-lg-between">
-
-                <div class="col-lg-3">
-                    <div class="row d-flex flex-row">
-                        <div class="col-2 col-sm-2">
-                            <ion-icon size="large"name="call-outline"class="text-primary"></ion-icon>
-                        </div>                
-                        <div class="col-11 col-sm-10 text-primary">
-                            <span class="h5">Atención Télefonica</span>
-                            <h4 class="font-weight-bold">0810-333-9471</h4>
-                            <h4 class="font-weight-bold">(0236) 4421081</h4>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12 col-lg-3 d-flex flex-column">
+                <h4>CENTRO DE AYUDA</h4>
+                <a href="#">Medios de Pago y Envío</a>
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="#">Politica de Cambios</a>
                 
-                <div class="col-12 col-lg-3 d-flex flex-column">
-                    <h4>CENTRO DE AYUDA</h4>
-                    <a href="#">Medios de Pago y Envío</a>
-                    <a href="#">Preguntas Frecuentes</a>
-                    <a href="#">Politica de Cambios</a>
-                    
-                </div>
-                <div class="col-12 col-lg-2 d-flex flex-column">
-                    <h4>INSTITUCIONAL</h4>
-                    <a href="#">La Empresa</a>
-                    <a href="#">Sucursales</a>
-                    <a href="#">Contacto</a>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="row d-flex flex-column">
-                        <div class="col-6 col-sm-11">
-                            <h4>SUSCRIBITE</h4>
-                            <p>Recibi en tu email nuestras ofertas e ingresos</p>
-                        </div>
-                        <div class="col-6 col-sm-8 d-flex flex-row">
-                            <input class="form-control" type="text" placeholder="Mail" aria-label="Search"></span>
-                            <button class="btn btn-primary">Enviar</button>
-                        </div>
+            </div>
+            <div class="col-12 col-lg-2 d-flex flex-column">
+                <h4>INSTITUCIONAL</h4>
+                <a href="#">La Empresa</a>
+                <a href="#">Sucursales</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="col-12 col-lg-4">
+                <div class="row d-flex flex-column">
+                    <div class="col-6 col-sm-11">
+                        <h4>SUSCRIBITE</h4>
+                        <p>Recibi en tu email nuestras ofertas e ingresos</p>
+                    </div>
+                    <div class="col-6 col-sm-8 d-flex flex-row">
+                        <input class="form-control" type="text" placeholder="Mail" aria-label="Search"></span>
+                        <button class="btn btn-primary">Enviar</button>
                     </div>
                 </div>
-
             </div>
+
         </div>
+    </div>
 
-        <hr class="style1 ">
+    <hr class="style1 ">
 
-        <div class="container ">
-            <div class="row d-flex">
+    <div class="container ">
+        <div class="row d-flex">
 
-                <div class="col-9 col-lg-10">
-                    <p>CLIENTE 2020 - Todos los derechos reservados</p>
-                </div>
+            <div class="col-9 col-lg-10 text-lg-left">
+                <p>CLIENTE 2020 - Todos los derechos reservados</p>
+            </div>
+
+            <div class="col-1">
+                <img src="img/datafiscal.jpg" alt="data fiscal">
+            </div>
+
+        </div>
+    </div>
     
-                <div class="col-1">
-                    <img src="img/datafiscal.jpg" alt="data fiscal">
-                </div>
-
-            </div>
-        </div>
-        
-    </footer>
+</footer>
     
     
     <script type="text/javascript" src="js/app.js"></script>
