@@ -105,20 +105,48 @@
                             <ion-icon size="large"name="card-outline"></ion-icon>
                             <h6 class="ml-2"><strong>12 </strong>cuotas x <strong>$2.291</strong></h6>
                         </div>  
+                        
                         <div class="col-12 col-sm-8 d-flex align-items-end justify-content-center justify-content-sm-left text-left ">  
-                           <a href="#" >Ver cuotas y medios de pago</a>
+                           <button id="btnFetch"class="spinner-button" >Ver cuotas y medios de pago</button>          
                         </div>
                     </div>
                     <!--COMPRAR-->
                     <div class="comprar row mt-4" >
                         <div class="col-12 col-sm-5 ">
-                            <button href="#" class="btn btn-primary">Comprar</button>
+                            <button href="#" class="btn btn-primary" data-toggle="modal" data-target="#ventana-modal">Comprar</button>
                         </div>
                         <div class="iconos col-12 col-sm-7 text-secondary d-sm-flex align-items-center justify-content-sm-start ml-sm-4 ml-lg-0 mt-3">
                             <a href=""><ion-icon class="mr-3" size="large" name="heart-outline"></ion-icon></a>
                             <a href=""><ion-icon size="large"name="mail-open"></ion-icon></a>
                         </div>
                     </div>
+
+                    <!------ventana modal----------------------->
+
+
+                    <div class="modal "id="ventana-modal" tabindex='-1' role="dialog" aria-labelledby="titulo-ventana"aria-hidden="true">
+                        <div class="modal-dialog "role="document">
+                            <div class="modal-content">
+                                <div class="modal-header ">
+                                    <button class="close" data-dismiss="modal" aria-label="cerrar">
+                                        <span aria-hidden="true" >&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body ">
+                                    <div class="alert alert-success bg-primary  ">
+                                        <h6 id="titulo-ventana" class="text-center h3 text-white">Agregaste al carrito</h6>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+
+
+
+
                     <hr class="style1 mt-5">
                     <!--ENVIOS-->
                     <div class="envios row mt-4">

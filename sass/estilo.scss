@@ -86,9 +86,12 @@ nav{
         }
     }
     .forma-pago{
-        a{
+        button{
             color: rgb(33, 33, 207);
             text-decoration: underline; 
+            border: none;
+            background: none;
+            
         } 
     }
     .comprar{
@@ -101,6 +104,15 @@ nav{
             }
         }
         
+    }
+
+    //modal
+    .modal-content{
+        box-shadow: grey;
+    }
+    .modal-header{
+        border-bottom: none !important;
+
     }
 
     
