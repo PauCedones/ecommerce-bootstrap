@@ -15,30 +15,44 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
-    <!--LOGO USUARIOS-->
+    <!--LOGO buscador-->
     <header class="container-fluid  bg-info ">
         <div class="row d-flex align-items-center ">
-            <div class="col-1 m-4 mr-lg-5 ">
+            <!--logo-->
+            <div class="col-5 col-sm-2  mr-lg-5 my-3 ">
                 <img src="img/logo.png"  alt="logo">
             </div>
-            <div class="d-none d-lg-flex col-lg-6 d-flex flex-row  ">
+            <!--buscador-->
+            <div class="d-none d-lg-flex d-lg-flex col-lg-6  flex-row  ">
                 <span class=" col-12 badge-pill badge-light d-flex align-items-center p-2 shadow ">
                     <input class=" buscador form-control  " type="text" placeholder="Buscar" aria-label="Search">
                     <ion-icon name="search-outline" style="font-size:23px"></ion-icon>
                 </span>
-
             </div>
-            <!---->
-            <div class="col-3 d-flex align-items-center">
-                <a href=""><ion-icon size="large" name="heart-outline" class="mr-5"></ion-icon></a>
-              
+            <!--USUARIO-->
+            <div class="usuario col-5 col-lg-3 d-flex align-items-center justify-content-end">
+                <!--corazon icono-->
+                <a href="#"><ion-icon size="large" name="heart-outline" ></ion-icon></a>
+                <!--mi cuenta icono-->
                 <ion-icon size="large" name="person-outline"></ion-icon>
-                <a href="">
+                <a href="#" class="d-none d-sm-flex">
                     <span>Mi Cuenta  </span>
+                    <!--flechita pa abajo-->
                     <ion-icon name="chevron-down-outline" class="ml-2"></ion-icon>
                 </a>
-                
                 <ion-icon size="large" name="cart-outline"></ion-icon>
+            </div>
+
+        </div>
+        <!-- buscador mobile cambiado de lugar-->
+        <div class="row">
+            <div class="col mb-4 mb-lg-0">
+                <div class="d-flex d-lg-none  flex-row  ">
+                    <span class=" col-12 badge-pill badge-light d-flex align-items-center p-2 shadow ">
+                        <input class=" buscador form-control  " type="text" placeholder="Buscar" aria-label="Search">
+                        <ion-icon name="search-outline" style="font-size:23px"></ion-icon>
+                    </span>
+                </div>
             </div>
         </div>
     </header>
@@ -86,7 +100,7 @@
                         </div>
                     </div>
                     <!--FORMAS DE PAGO-->
-                    <div class="row ">
+                    <div class="forma-pago row ">
                         <div class="col-12 col-sm-4 d-flex align-items-end justify-content-center">
                             <ion-icon size="large"name="card-outline"></ion-icon>
                             <h6 class="ml-2"><strong>12 </strong>cuotas x <strong>$2.291</strong></h6>
@@ -100,7 +114,7 @@
                         <div class="col-12 col-sm-5 ">
                             <a href="#" class="btn btn-primary">Comprar</a>
                         </div>
-                        <div class="col-12 col-sm-7 text-secondary d-sm-flex align-items-center justify-content-sm-start ml-sm-4 ml-lg-0 mt-3">
+                        <div class="iconos col-12 col-sm-7 text-secondary d-sm-flex align-items-center justify-content-sm-start ml-sm-4 ml-lg-0 mt-3">
                             <a href=""><ion-icon class="mr-3" size="large" name="heart-outline"></ion-icon></a>
                             <a href=""><ion-icon size="large"name="mail-open"></ion-icon></a>
                         </div>
@@ -119,7 +133,7 @@
                         <!--tipos de envios-->
                         
                         <!--retiro en sucursal-->   
-                    <div class="container ">
+                    <div class="tipo-envio container ">
                         <div class="row mt-4 d-flex justify-content-center justify-content-sm-start mb-3">
                             <div class="col-2">
                                 <img src="img/store.png" alt="store">
@@ -365,55 +379,64 @@
 
     <!--PIE DE PAGINA-->
     <footer class="pie-de-pagina bg-info">
-        <div class="container p-5">
-            <div class="row d-flex justify-content-between">
-                <div class="row">
-                    <div class="col-sm-2">
-                        <ion-icon size="large"name="call-outline"class="text-primary"></ion-icon>
-                    </div>                
-                    <div class="col-12 col-lg-10 text-primary">
-                        <span class="h3">Atención Télefonica</span>
-                        <h4 class="font-weight-bold">0810-333-9471</h4>
-                        <h4 class="font-weight-bold">(0236) 4421081</h4>
+        <div class="container p-5 ">
+            <div class="row justify-content-lg-between">
+
+                <div class="col-lg-3">
+                    <div class="row d-flex flex-row">
+                        <div class="col-2 col-sm-2">
+                            <ion-icon size="large"name="call-outline"class="text-primary"></ion-icon>
+                        </div>                
+                        <div class="col-11 col-sm-10 text-primary">
+                            <span class="h5">Atención Télefonica</span>
+                            <h4 class="font-weight-bold">0810-333-9471</h4>
+                            <h4 class="font-weight-bold">(0236) 4421081</h4>
+                        </div>
                     </div>
                 </div>
                 
-
-                <div class="col-12 col-lg-2">
+                <div class="col-12 col-lg-3 d-flex flex-column">
                     <h4>CENTRO DE AYUDA</h4>
                     <a href="#">Medios de Pago y Envío</a>
                     <a href="#">Preguntas Frecuentes</a>
                     <a href="#">Politica de Cambios</a>
                     
                 </div>
-                <div class="col-12 col-lg-2">
+                <div class="col-12 col-lg-2 d-flex flex-column">
                     <h4>INSTITUCIONAL</h4>
                     <a href="#">La Empresa</a>
                     <a href="#">Sucursales</a>
                     <a href="#">Contacto</a>
                 </div>
-                <div class="col-12 col-lg-2">
-                    <h4>SUSCRIBITE</h4>
-                    <p>Recibi en tu email nuestras ofertas e ingresos</p>
-                    
-                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary">Enviar</button>
-                    
-                    
-                    
+                <div class="col-12 col-lg-4">
+                    <div class="row d-flex flex-column">
+                        <div class="col-6 col-sm-11">
+                            <h4>SUSCRIBITE</h4>
+                            <p>Recibi en tu email nuestras ofertas e ingresos</p>
+                        </div>
+                        <div class="col-6 col-sm-8 d-flex flex-row">
+                            <input class="form-control" type="text" placeholder="Mail" aria-label="Search"></span>
+                            <button class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
+
         <hr class="style1 ">
+
         <div class="container ">
-            <div class="row ">
-                <div class="col-6 d-flex justify-content-between">
+            <div class="row d-flex">
+
+                <div class="col-9 col-lg-10">
                     <p>CLIENTE 2020 - Todos los derechos reservados</p>
                 </div>
     
-                <div class="col-6 d-flex justify-content-between">
+                <div class="col-1">
                     <img src="img/datafiscal.jpg" alt="data fiscal">
                 </div>
+
             </div>
         </div>
         

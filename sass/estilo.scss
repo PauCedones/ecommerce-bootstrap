@@ -19,6 +19,25 @@ body{
 .form-control{
     border: none;
 }
+.usuario{
+    a{
+        color:black;
+        &:hover{
+            color: grey;
+        }
+    }
+}
+
+    //buscador
+    header{
+       .form-control{
+            &:focus{
+                border-color: none !important;
+                box-shadow: none !important;
+            }
+            
+        }
+    }
 
 //NAV BAR
 nav{
@@ -47,13 +66,47 @@ nav{
 
 
 
-/////////
+///////// PRODUCTO
 
-.envio{
-    p{
-        margin-bottom: 0 !important;
+    .envio{
+        p{
+            margin-bottom: 0 !important;
+        }
     }
-}
+    .tipo-envio{
+        a{
+            color: rgb(33, 33, 207);
+            text-decoration: underline;
+        }
+    }
+    .envios{
+        a{
+            color: rgb(33, 33, 207);
+            text-decoration: underline; 
+        }
+    }
+    .forma-pago{
+        a{
+            color: rgb(33, 33, 207);
+            text-decoration: underline; 
+        } 
+    }
+    .comprar{
+        .iconos{
+            a{
+                color:grey;
+                &:hover{
+                    color: darken(grey,15%);
+                }
+            }
+        }
+        
+    }
+
+    
+
+//DESCRIPCION - FICHA TECNICA
+
 .descripcion-ficha{
     button{
         border: none;
@@ -79,4 +132,17 @@ nav{
             color: $primary;
         }
     }
+}
+
+//FOOTER
+.pie-de-pagina{
+    .btn{
+        padding: 0px !important;
+        width:100px;
+    }
+    a{
+        color: black;
+        cursor: pointer;
+    }
+
 }

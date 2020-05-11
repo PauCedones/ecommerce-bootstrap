@@ -9899,6 +9899,18 @@ body {
   border: none;
 }
 
+.usuario a {
+  color: black;
+}
+.usuario a:hover {
+  color: grey;
+}
+
+header .form-control:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+
 nav .navbar-nav .nav-item .nav-link {
   margin: 5px 20px 5px 0px !important;
 }
@@ -9912,6 +9924,28 @@ nav .navbar-nav .nav-item .nav-link:hover {
 
 .envio p {
   margin-bottom: 0 !important;
+}
+
+.tipo-envio a {
+  color: #2121cf;
+  text-decoration: underline;
+}
+
+.envios a {
+  color: #2121cf;
+  text-decoration: underline;
+}
+
+.forma-pago a {
+  color: #2121cf;
+  text-decoration: underline;
+}
+
+.comprar .iconos a {
+  color: grey;
+}
+.comprar .iconos a:hover {
+  color: #5a5a5a;
 }
 
 .descripcion-ficha button {
@@ -9934,6 +9968,15 @@ nav .navbar-nav .nav-item .nav-link:hover {
   border-bottom: 3px solid #b6180d;
   transition: all ease-out 0.3s;
   color: #b6180d;
+}
+
+.pie-de-pagina .btn {
+  padding: 0px !important;
+  width: 100px;
+}
+.pie-de-pagina a {
+  color: black;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=estilo.css.map */
